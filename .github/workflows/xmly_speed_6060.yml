@@ -21,7 +21,7 @@ jobs:
         run: pip install -r ./Lucky/喜马拉雅极速版/requirements.txt 
         
       - name: 'run 喜马拉雅极速版' 
-        run: python3 ./Lucky/喜马拉雅极速版/xmly_speed.py 
+        run: python3 ./Lucky/喜马拉雅极速版/xmly_speed_6060.py 
         env:
             XMLY_SPEED_COOKIE: ${{ secrets.XMLY_SPEED_COOKIE }}  #必须
             # XMLY_ACCUMULATE_TIME: ${{ secrets.XMLY_ACCUMULATE_TIME }} #非私密信息，去掉
